@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script> //global scope//
+            var fname = "moksh";
+            // var fname = "moksh1"; redeclaration allowed
+            fname = "moksh2" //reassign allowed//
+            document.write(fname+ "<br>");
+        </script>
+
+        <script> //block scope//
+            let c_name = "moksh";
+            // let c_name = "moksh1"; redeclaration not allowed
+            c_name = "moksh2" //reassign allowed//
+            document.write(fname+"<br>");
+        </script>
+
+        <script> //block Scope//
+            const fname = "moksh";
+            const fname = "moksh1"; //redeclaration not allowed//
+            fname = "moksh2" //reassign not allowed//
+            document.write(fname+"<br>");
+        </script>
+    </body>
+</html>

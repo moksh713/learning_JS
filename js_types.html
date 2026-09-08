@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Inline JS example -->
+        <button onclick="alert('inline example')">
+            inline JS
+        </button>
+
+        <button onclick="showMsg()">
+            internal JS
+        </button>
+        <button onclick="hello()">
+            external JS
+        </button>
+
+        <script>
+            var myName = "Moksh"
+                document.write(myName + "<br>");
+         </script>
+        <script>
+            function showMsg(){
+                alert('internal JS');
+            }
+         </script>
+        <script src="js/script.js" type="text/javascript"></script>
+    </body>
+</html>
