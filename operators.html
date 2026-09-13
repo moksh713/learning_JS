@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            //+ operator//
+            var a = 10;
+            var b = 5;
+            var c = 10 + 5;//binary//
+            document.write(c + "<br>")
+            c++;//unary//
+            c++;
+            c++;
+            c--;
+            c++;
+            c--;
+            c++;
+            document.write(c + "<br>")
+
+            //- operator//
+            var a = 10;
+            var b = 5;
+            var c = 10 - 5;//binary//
+            document.write(c + "<br>")
+            c++;//unary//
+            c++;
+            c++;
+            c--;
+            c++;
+            c--;
+            c++;
+            document.write(c + "<br>")
+
+            //* operator//
+            var a = 10;
+            var b = 5;
+            var c = 10 * 5;//binary//
+            document.write(c + "<br>")
+            c++;//unary//
+            c++;
+            c++;
+            c--;
+            c++;
+            c--;
+            c++;
+            document.write(c + "<br>")
+        </script>
+
+        <!-- assignment operators =, +=, -+,*=  -->
+        <script>
+            var x = 10;
+            var y = 12;
+            x += y;
+            // x = x + y;
+            document.write(x + "<br>");//22
+            document.write(y);//12
+        </script>
+
+        <!-- comparison operators -->
+         <script>
+            var p = 17;
+            var q = "17";
+            document.write("<br>");
+            if(p==q){
+                document.write("true");
+            }
+            else{
+                document.write("false");
+            }
+            // here p is equal to q because == does not checks data type
+
+
+            var p = 17;
+            var q = "17";
+            document.write("<br>");
+            if(p===q){
+                document.write("true");
+            }
+            else{
+                document.write("false");
+            }
+            // here p is unequal to q because === checks data type
+         </script>
+
+         <!--     logical operators &&, ||, !     -->
+         <script>
+            document.write("<br>");
+            var age= 17;
+            if(age>=18 && age <=100){
+                document.write("eligible")
+            }
+            else{document.write("not eligible");
+            }
+         </script>
+         <script>
+            document.write('<br>');
+            var day = "saturday";
+            if( day === "saturday" || day ==="sunday"){
+                document.write("its a weekend");
+            }
+            else{
+                document.write("its a weekday")
+            }
+         </script>
+         <script>
+            document.write("<br>");
+            let vote_age = 17;
+            let eligibility = (vote_age >= 18) ? "eligible to vote" : "not eligible to vote";
+            document.write(eligibility);
+         </script>
+    </body>
+</html>
