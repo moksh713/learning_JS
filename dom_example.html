@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- change text -->
+         <h1 id="title">HELLO1</h1>
+         <button onclick="changetext()">changes text
+         </button>
+        <script>
+            function changetext(){
+                document.getElementById('title').innerHTML='changed text';
+            }
+        </script>
+
+        <h2>color will change</h2>
+        <p id="color_change">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod atque hic in quia ipsa voluptas eos, velit temporibus quidem blanditiis facilis, laboriosam veritatis optio possimus soluta consequatur fuga distinctio iure.</p>
+        <button onclick="changecolor()">change color
+        </button>
+
+        <script>
+            function changecolor(){
+                document.getElementById('color_change').style.backgroundColor = 'black';
+                document.getElementById('color_change').style.color = 'white';
+            }
+        </script>
+
+        <h2>change image</h2>
+        <img id="change_image" src="images/dog.png" width="300"/>
+        <button onclick="changeImage()">change image</button>
+        <script>
+            function changeImage(){
+                document.getElementById('change_image').src='images/flowers.jpg'
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            // array modify and delete
+            var info=["moksh",23, "WD","pune"];
+
+            document.write(info, "<br>");
+
+            info[0]="charu";
+            info[1]=21;
+            info[2]="front-end";
+            info[3]="banglore"
+            document.write(info, "<br>");
+            delete info[1];
+            document.write(info, "<br>");
+        </script>
+
+        <script>
+            // sorting and reversing sorting
+            var b=["a","b","c","d","f","e","h","s","z","c","h","j"];
+
+            document.write(b + "<br>");
+            b.sort();
+            document.write(b + "<br>");
+            b.reverse();
+            document.write(b + "<br>");
+        </script>
+
+
+        <h2>pop and push</h2>
+        <script>
+            
+            //pop and push
+            var c=["a","b","c","d","f","e","h","s","z","c","h","j"];
+            document.write(c, "<br>");
+            c.pop();
+            document.write(c, "<br>");
+            //pop eliminates last index
+            c.push("charu");
+            document.write(c, "<br>");
+            //push adds index at last 
+        </script>
+
+        <h2>shift unshift</h2>
+        <script>
+            //shift removes first indexes
+            var d=["a","b","c","d","f","e","h","s","z","c","h","j"];
+            document.write(d, "<br>");
+            d.shift();
+            document.write(d, "<br>");
+            //unshift adds index at start
+            d.unshift("m");
+            document.write(d, "<br>");
+        </script>
+        
+        <h2>concat and join</h2>
+        <script>
+            var a=["a","b","c","d","f","e","h","s","z","c","h","j"];
+            var b=["moksh","pramod"];
+            var c=["satav"];
+
+            var ab=a.concat(b);
+            var cd=ab.concat(c);
+            document.write(cd, "<br>"); 
+            
+            var j=cd.join("/");
+            //join adds character of choice between indexes
+            document.write(j, "<br>");
+        </script>
+
+    </body>
+</html>
